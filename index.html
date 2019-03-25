@@ -10,7 +10,7 @@
     "use strict";
     // задание 4.1
     function getMyObj(intNum) {
-        if(intNum > 1000) return console.log({});
+        if(intNum >= 999) return console.log({});
         intNum = String(intNum).split('');
         if (intNum.length == 1) intNum.splice(0, 0, "0", "0");
         if (intNum.length == 2) intNum.splice(0, 0, "0");
