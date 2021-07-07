@@ -10,7 +10,7 @@
     "use strict";
     // задание 4.1
     function getMyObj(intNum) {
-        if(intNum > 1000) return console.log({});
+        if(intNum > 999) return console.log({});
         intNum = String(intNum).split('');
         if (intNum.length == 1) intNum.splice(0, 0, "0", "0");
         if (intNum.length == 2) intNum.splice(0, 0, "0");
@@ -100,7 +100,7 @@
             console.log(`Общая сумма покупки: ${this.countTotalPrice()}`);
         }
     };
-    
+
     let numProd = +(prompt('Введите колличество товаров которое хотели бы приобрести', ''));
     while (isNaN(numProd)){
         numProd = +(prompt('Вы не верно ввели колличество, повторите попытку (пример : "3")', ''));
@@ -110,10 +110,7 @@
     basket.showBasket();
 
     // задание 4.3
-
-
-
-
+    //находится в папке "consoleWalker"
 </script>
 </body>
 </html>
